@@ -1,3 +1,16 @@
+# driploader_rs
+
+This is my rust port of xuanxuan0's [DripLoader](https://github.com/xuanxuan0/DripLoader). It is a shellcode injection technique where the shellcode is split up in parts of 4096 bytes. It is then allocated, written and reprotected part by part, with sleep statements in between in order to evade detection.
+
+## Usage
+
+```cmd
+driploader.exe --shellcode <SHELLCODE> --milliseconds <MILLISECONDS>
+```
+
+* `shellcode`: path to shellcode file
+* `milliseconds` number of milliseconds to sleep between operations
+
 ## Disclaimer
 
 This project is intended solely for educational and research purposes. It is provided to help developers and security professionals understand shellcode execution techniques in a controlled and ethical manner.
