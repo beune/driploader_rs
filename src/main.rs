@@ -87,7 +87,7 @@ fn main() {
         let mut current_base = base_addr;
         let mut vector_virtual_memory_reservations: Vec<usize> = Vec::new();
 
-        for _ in 1..=count_virtual_memory_reservations {
+        for _ in 0..count_virtual_memory_reservations {
 
             thread::sleep(Duration::from_millis(milliseconds));
 
