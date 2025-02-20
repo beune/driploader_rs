@@ -53,11 +53,9 @@ unsafe fn get_suitable_base_address(alloc_gran: usize, count_virtual_memory_rese
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 struct Args {
-    /// Name of the person to greet
     #[arg(short, long)]
     shellcode: String,
 
-    /// Number of times to greet
     #[arg(short, long)]
     milliseconds: u64,
 }
